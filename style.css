@@ -1,0 +1,309 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+    background-color:black;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.nav{
+    background-color:black;
+    color:white;
+    display:flex;
+    /* justify-content:space-between; */
+    align-items:center;
+    height:80px;
+    padding-left:10px;
+    padding-right:10px;
+    width:630px;
+    justify-self:center;
+}
+
+.nav-left{
+    background-color:black;
+    color:white;
+    display:flex;
+    /* justify-content:space-between; */
+    align-items:center;
+    height:80px;
+    padding-left:10px;
+    padding-right:10px;
+    width:630px;
+    justify-self:center;
+}
+
+.btn{
+    display:flex;
+    justify-self:flex-end;
+    width:70px;
+    text-align:center;
+    background-color:teal;
+    color:white;
+}
+
+.nav-title{
+    font-size:x-large;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    justify-content:space-between;
+    margin:10px;
+}
+
+ul{
+    padding-left:0px;
+}
+
+a{
+    color: white;
+    margin:10px;
+    text-decoration:none;
+}
+
+.button_box{justify-self:flex-end;}
+
+/* Main page (below navbar) */
+
+.main{
+    /* background-color:red; */
+    width:fit-content;
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+}
+.left{
+    /* background-color:blue; */
+    width:400px;
+    height:800px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+
+.right{
+    /* background-color:yellow; */
+    width:250px;
+    height:800px;
+}
+
+
+/* USER ID CARD BOX */
+.card{
+    width:380px;
+    height:fit-content;
+    border-color: gray;
+    border-style:solid;
+    border-radius:3px;
+    margin-top:20px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+.topbar{
+    background-color:teal;
+    height:80px;
+}
+
+#profile_pic{
+    height:80px;
+    position:relative;
+    top:50%;
+    left:50px;
+    border-style:solid;
+    border-color:rgb(155, 154, 154);
+    border-radius:50%;
+}
+
+.info{
+    margin-left:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    
+}
+
+h1{
+    margin-top:10%;
+    margin-bottom:0px;
+    padding:0px;
+}
+h3{
+    display:flex;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+h5{
+    padding:0px;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+.edit{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+#loc{
+    height:20px;
+    margin-right:20px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+#gear{
+    height:20px;
+}
+
+#edit_profile{
+    color:blue;
+    text-decoration:underline;
+}
+
+/* EDUCATION BOX */
+.edu{
+    width:380px;
+    border-color: gray;
+    border-style:solid;
+    border-radius:3px;
+    margin-top:20px;
+}
+
+.edu_bar{
+    background-color: rgba(0, 0, 0, 0.801);
+    color:white;
+    padding:10px;
+}
+
+.edu_info{
+    margin:10px;
+}
+
+.edu_label{
+    font-size:large;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.edu_dates{
+color:gray;
+margin-top:5px;
+}
+
+/* Connection Request Box */
+.requests{
+    height:fit-content;
+    width:230px;
+    border-color: gray;
+    border-style:solid;
+    border-radius:3px;
+    margin-top:20px;
+}
+
+.req_bar{
+    background-color: rgba(0, 0, 0, 0.801);
+    color:white;
+    padding:10px;
+    display:flex;
+    align-items: center;
+}
+
+.req_count{
+    color:black;
+    border-color:gray;
+    border-radius:50%;
+    background-color:gray;
+    margin:0px 10px 0px 0px;
+    text-align:center;
+    width:100%;
+}
+
+.req_title{
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+}
+
+.req_contact{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /* margin:5% */
+}
+
+.reqleft{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.reqright{
+    display:flex;
+    justify-self:stretch;
+}
+.icon{
+    height:30px;
+    margin:10px;
+}
+
+#req_icon{
+    margin-left:0px;
+}
+
+
+/* Your Connections Box */
+.connects{
+    height:fit-content;
+    width:230px;
+    border-color: gray;
+    border-style:solid;
+    border-radius:3px;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.connection{
+    display:flex;
+}
+
+.con_bar{
+    background-color: rgba(0, 0, 0, 0.801);
+    color:white;
+    padding:10px;
+    display:flex;
+}
+
+.con_count{
+    color:black;
+    border-color:gray;
+    border-radius:40%;
+    background-color:gray;
+    margin:0px 10px 0px 0px;
+    text-align:center;
+    width:100%;
+}
+
+.con_title{
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+}
+
+.viewmore{
+    border-color:gray;
+    border-top-style:solid;
+    height:40px;
+}
+.more{
+    color:blue;
+    display:flex;
+    align-items:center;
+    text-decoration:underline;
+}
