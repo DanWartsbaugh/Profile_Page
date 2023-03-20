@@ -34,7 +34,7 @@
                     <img src="images/icons/user-circle.png" alt="profile pic" id="profile_pic">
                 </div>
                 <div class="info">
-                    <h1>Jane Doe</h1>
+                    <h1 id="userName">Jane Doe</h1>
 
                     <h3><img src="images/icons/map-marker.png" alt="map marker" id="loc">
                         Seattle
@@ -47,8 +47,8 @@
 
                     </h5>
                     <div class="edit">
-                        <a href="#"><img src="images/icons/gear.png" alt="gear" id="gear"></a>
-                        <a href="#" id="edit_profile">edit profile</a>
+                        <a href="#" onclick="nameChange()"><img src="images/icons/gear.png" alt="gear" id="gear"></a>
+                        <a href="#" id="edit_profile" onclick="nameChange()">edit profile</a>
                     </div>
                 </div>
             </div>
@@ -70,27 +70,27 @@
             <!-- connection requests box -->
             <div class="requests">
                 <div class="req_bar">
-                    <div><p class="req_count"> 2 </p></div>
+                    <div><p class="req_count" id="requestNumber"> 2 </p></div>
                     <p class=req_title>Connection Requests</p>
                 </div>
-                <div class="req_contact">
+                <div class="req_contact" id="req1">
                     <div class="reqleft">
                         <img src="images/icons/user-circle.png" alt="profile pic" class="icon">
                         <p>Todd E</p>
                     </div>
                     <div class="reqright">
-                        <img src="images/icons/accept-circle.png" alt="accept" class="icon" id="req_icon">
-                        <img src="images/icons/close-circle.png" alt="reject" class="icon" id="req_icon">
+                        <button onclick="hide('req1c')"><img src="images/icons/accept-circle.png" alt="accept" class="icon" id="req_icon"></button>
+                        <button onclick="hide('req1')"><img src="images/icons/close-circle.png" alt="reject" class="icon" id="req_icon"></button>
                     </div>
                 </div>
-                <div class="req_contact">
+                <div class="req_contact" id="req2">
                     <div class="reqleft">
                         <img src="images/icons/user-circle.png" alt="profile pic" class="icon">
                         <p>Phil K</p>
                     </div>
                     <div class="reqright">
-                        <img src="images/icons/accept-circle.png" alt="accept" class="icon" id="req_icon">
-                        <img src="images/icons/close-circle.png" alt="reject" class="icon" id="req_icon">
+                        <button onclick="hide('req2c')" onclick="confirm()"><img src="images/icons/accept-circle.png" alt="accept" class="icon" id="req_icon"></button>
+                        <button onclick="hide('req2')"><img src="images/icons/close-circle.png" alt="reject" class="icon" id="req_icon"></button>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <!-- your connections box -->
             <div class="connects">
                 <div class="con_bar">
-                    <div><p class="con_count"> 500+ </p></div>
+                    <div><p class="con_count" id="confirmed"> 452 </p></div>
                     <p class="con_title">Your Connections</p>
                 </div>
                 <div class="connection">
@@ -123,7 +123,7 @@
             </div>
         </div>
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>

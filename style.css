@@ -130,13 +130,14 @@ a{
 }
 
 h1{
-    margin-top:10%;
+    margin-top:50px;
     margin-bottom:0px;
     padding:0px;
 }
 h3{
     display:flex;
     margin-bottom:0px;
+    margin-top:0px;
     padding:0px;
 }
 
@@ -306,4 +307,11 @@ margin-top:5px;
     display:flex;
     align-items:center;
     text-decoration:underline;
+}
+
+.requests button{
+    margin:0;
+    padding:0;
+    background-color:white;
+    border:none;
 }
